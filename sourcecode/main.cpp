@@ -10,7 +10,8 @@ struct kid
     int y;
     int strenght;
     int animalid;
-    int stationid;
+    int targstatid;
+    int ridestatid;
     int happiness;
     int anim;
     int animd;
@@ -32,12 +33,50 @@ struct tile
     int anim;
 };
 
+std::vector <tile> tilelist;
+void tiledraw(std::vector <tile> todraw)
+{
+    int skip;
+    int best;
+    int check;
+    int checking;
+    int drawmax = todraw.size() + 1;
+    std::vector<int> skiplist;
+    while(drawmax > 0)
+    {
+        best = 0;
+        check = drawmax;
+        while(check > 0)
+        {
+            checking = check;
+            skip = skiplist.size();
+            while(skip > 0)
+            {
+                if(checking == skiplist[skip])
+                {
+                    checking -= 1;
+                    skip = 0;
+                }
+            }
+            if(checking == check)
+            {
+                if(tilelist[check].y < tilelist[best].y)
+                {
+                    best = check;
+                }
+                check -= 1;
+            }
+        }
+
+    }
+}
 int main()
 {
     InitWindow(width,hight,"test window");
     SetTargetFPS(60);
     while(!WindowShouldClose())
     {
+
         if(titlescreenstate == 1 && IsKeyDown(KEY_SPACE))
         {
             titlescreenstate = 2;
