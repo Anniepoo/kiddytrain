@@ -12,8 +12,8 @@ struct kid
     int animalid;
     int stationid;
     int happiness;
-    int animframe;
-    int animdesync;
+    int anim;
+    int animd;
 };
 
 struct traincar
@@ -22,6 +22,14 @@ struct traincar
     int y;
     int animframe;
     int rotation;
+};
+
+struct tile
+{
+    int x;
+    int y;
+    int id;
+    int anim;
 };
 
 int main()
