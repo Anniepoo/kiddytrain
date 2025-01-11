@@ -26,14 +26,21 @@ Each kid has a cycle:
 7. walk to your animal
 8. goto 1
 
-The train starts with one car, capable of carrying 2 kids. Every time you make the kids happy for a while you get one extra car and more kids arrive at the park.
+Kids arrive happy at the entrance/exit near a station. They then enter the cycle at 2.
 
-if kids are unhappy they walk to the exit. If they reach the exit they leave. If you get too few kids in park you lose a car
+Any time a kid's happiness falls below a cutoff their preferred animal becomes 'exit' (on any frame). The designated location of the 'exit' animal is the zoo entrance. Every frame delete kids near the exit who are looking for the 'exit' animal.
+
+The train starts with one car, capable of carrying 2 kids. Every time you make the kids happy for a while you get one extra car and more kids arrive at the park. The number of cars happiness must have a longer time constant than the immediate happiness gage.
+
+if kids are unhappy they walk to the exit. If they reach the exit they leave. If you get too few kids in park you lose a car.
 
 ## controls - 
 W  -  accelerate train
 A - slow down train - or back up
 S, D - take left or right fork of turnouts you encounter
+space - load the train
+
+
 
 
 
