@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+# Version 1 blender files
+*.blend1
