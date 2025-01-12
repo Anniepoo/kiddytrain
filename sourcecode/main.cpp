@@ -1,5 +1,7 @@
 #include <raylib.h>
 #include "vector"
+
+int globalhappinessmin;
 int width = 500;
 int hight = 500;
 int titlescreenstate;
@@ -67,7 +69,7 @@ void tiledraw(std::vector <tile> todraw)
                 check -= 1;
             }
         }
-
+        drawmax -= 1;
     }
 }
 int main()
