@@ -40,6 +40,12 @@ A - slow down train - or back up
 S, D - take left or right fork of turnouts you encounter
 space - load the train
 
+The view scrolls when the locomotive is outside a bounding box inset
+
+# GUI/background
+
+Game is in a fixed size window. Art should minimally plan for multi-size,
+but for now, a fixed size window.
 
 
 
