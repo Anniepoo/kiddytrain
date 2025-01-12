@@ -1,4 +1,0 @@
-/home/Brigaton/train game/game_build/CMakeFiles/game.dir
-/home/Brigaton/train game/game_build/CMakeFiles/raylib.dir
-/home/Brigaton/train game/game_build/CMakeFiles/edit_cache.dir
-/home/Brigaton/train game/game_build/CMakeFiles/rebuild_cache.dir
