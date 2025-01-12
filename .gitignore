@@ -1,4 +1,4 @@
-build/
+/sourcecode/raylib.h
 # Prerequisites
 *.d
 
