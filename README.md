@@ -42,10 +42,12 @@ space - load the train
 
 The view scrolls when the locomotive is outside a bounding box inset
 
-# GUI/background
+# Artwork
 
-Game is in a fixed size window. Art should minimally plan for multi-size,
-but for now, a fixed size window.
+There is a Gimp file, imagedesign.xcf , that demonstrates the art organization.
+Groups will be rendered as layers in the game.
+
+
 
 
 
