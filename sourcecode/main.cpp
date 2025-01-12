@@ -1,5 +1,5 @@
 #include "raylib.h"
-#include "vector"
+#include <vector>
 
 int globalhappinessmin;
 int width = 500;
@@ -74,6 +74,7 @@ void tiledraw(std::vector <tile> todraw)
 }
 int main()
 {
+    titlescreenstate = 1;
     InitWindow(width,hight,"test window");
     SetTargetFPS(60);
     while(!WindowShouldClose())
