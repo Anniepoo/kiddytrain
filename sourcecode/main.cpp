@@ -42,7 +42,14 @@ struct train
     int anim;
     int speed;
     int acel;
+};
+
+void tileload(std::vector <tile> tiles)
+{
+    tile input;
+    tiles.push_back(input);
 }
+
 std::vector <tile> tilelist;
 void tiledraw(std::vector <tile> todraw)
 {
