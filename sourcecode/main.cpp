@@ -35,6 +35,14 @@ struct tile
     int anim;
 };
 
+struct train
+{
+    int x;
+    int y;
+    int anim;
+    int speed;
+    int acel;
+}
 std::vector <tile> tilelist;
 void tiledraw(std::vector <tile> todraw)
 {
